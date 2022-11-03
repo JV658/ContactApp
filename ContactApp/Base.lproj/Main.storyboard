@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFx-di-pB2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xdl-zy-F2X">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contact Table View Controller-->
+        <!--Contacts-->
         <scene sceneID="Ip4-Fo-XpH">
             <objects>
                 <tableViewController id="gFx-di-pB2" customClass="ContactTableViewController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,10 +39,29 @@
                             <outlet property="delegate" destination="gFx-di-pB2" id="kGU-QX-XSf"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Contacts" id="zwl-a4-kDa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWb-zF-Pxs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="7"/>
+            <point key="canvasLocation" x="640" y="-25.592417061611375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oXe-Fd-WrJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xdl-zy-F2X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qtK-ry-PME">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gFx-di-pB2" kind="relationship" relationship="rootViewController" id="GEG-Jk-TiX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bet-jX-ca0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289.23076923076923" y="-25.592417061611375"/>
         </scene>
     </scenes>
     <resources>
